@@ -7,6 +7,7 @@ const shopRoutes = require("./routes/shop");
 const app = express();
 
 app.use(bodyParser.urlencoded({ extended: false }));
+app.use(express.static(path.join(__dirname, "public")));
 //* การทำงานจะทำจาก บน ลง ล่าง ดังนั้น เจอ route ไหน ทำอันนั้นก่อนเสมอ
 
 app.use(shopRoutes);
