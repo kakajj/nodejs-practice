@@ -1,0 +1,12 @@
+<%- include('components/head.ejs') %>
+
+  </head>
+
+  <body>
+    <h1>Welcome!</h1>
+    <h2>Create new user</h2>
+    <form action="createUser" method="post">
+      <input type="text" name="fname" id="fname">
+      <button type="submit">Submit</button>
+    </form>
+    <%- include('components/end.ejs') %>
